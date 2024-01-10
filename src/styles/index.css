@@ -3,8 +3,11 @@
 :root {
     --william: #3B5C6D;
     --tradewind: #66ADA2;
-    --surf_crest: #D3E5D3;
+    --alabaster: #fafafa;
     --sushi: #87A747;
+    --cutty_sark: #5C8283;
+    --san_juan: #284967;
+    --cornflower_blue: #61A7E8;
 }
 
 * {
@@ -14,6 +17,6 @@
   }
   
 body {
-background-color: var(--surf_crest);
+background-color: var(--alabaster);
 font-family:  'IBM Plex Sans', sans-serif;
 }
