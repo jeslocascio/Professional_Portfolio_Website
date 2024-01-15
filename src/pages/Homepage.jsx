@@ -1,4 +1,5 @@
 import Header from '../components/Header';
+import Banner from '../components/Banner';
 import AboutMe from '../components/AboutMe';
 import ContactMe from '../components/ContactMe';
 import Portfolio from '../components/Portfolio';
@@ -9,6 +10,7 @@ function Homepage() {
   return (
     <div>
       <Header />
+      <Banner />
       <AboutMe />
       <Portfolio />
       <Skills />

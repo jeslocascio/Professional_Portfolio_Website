@@ -1,0 +1,17 @@
+.banner {
+    margin-top: 40px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    background-image: url('../assets/Banner_Background.jpg'); /* Replace with your image path */
+    background-size: cover;
+    color: var(--alabaster);
+    text-align: center;
+}
+
+.banner-text {
+    font-size: 2em;
+    line-height: 1.2;
+}
