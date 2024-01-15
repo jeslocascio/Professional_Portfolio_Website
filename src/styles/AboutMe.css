@@ -1,3 +1,28 @@
+.About_Me {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 50%; /* Adjust as needed */
+}
+
 .photoOfMe {
-    width: 150px;
+    border: 5px solid var(--cutty_sark);
+    margin-top: 5%;
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    order: 1; /* For responsive order */
+}
+
+.line {
+    width: 70%;
+    height: 100%;
+    order: 2; /* For responsive order */
+}
+
+.blurb {
+    flex-grow: 1;
+    order: 3; /* For responsive order */
 }

@@ -4,9 +4,11 @@ import "../styles/AboutMe.css";
 
 function AboutMe() {
   return (
-    <Container id="About_Me">
-         <img src={Selfie} className="photoOfMe" alt="Jesse LoCascio" />
-      <p>
+    <Container className="About_Me">
+        <img src={Selfie} className="photoOfMe" alt="Jesse LoCascio" />
+        <div className="line"></div>
+        <div className="blurb">
+        <p>
         Hello! My name is Jesse LoCascio. Currently, I am on an exciting journey as a full-stack web
         developer. My path began with a strong foundation in the arts, as I hold
         a BFA in Visual Arts with a concentration in Visual Communications (in
@@ -24,6 +26,7 @@ function AboutMe() {
         solutions to the ever-evolving world of web development. Join me as we
         explore the limitless possibilities of this digital landscape.
       </p>
+        </div>
     </Container>
   );
 }
