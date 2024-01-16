@@ -4,6 +4,7 @@
     flex-direction: row;
     width: 100%;
     max-width: 50%; /* Adjust as needed */
+    border-bottom: 5px dashed var(--cornflower_blue);
 }
 
 .photoOfMe {
