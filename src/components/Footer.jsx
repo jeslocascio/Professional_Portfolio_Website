@@ -5,7 +5,7 @@ import "../styles/Footer.css";
 
 export default function Footer() {
   const resume =
-    "#";
+    "https://docs.google.com/document/d/e/2PACX-1vRf84H747UVK4dMcs57ficz_0GbT4fcyIyehozTQICKJCXTVjYBirvENaKMXmPRLrxW2ep9ZEeV7Hl0/pub";
   return (
     <footer className="footer p-3 text-center">
       <div className="container">
