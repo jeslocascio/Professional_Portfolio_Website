@@ -4,7 +4,7 @@ import "../styles/AboutMe.css";
 
 function AboutMe() {
   return (
-    <Container className="About_Me">
+    <Container className="About_Me" id="about">
         <img src={Selfie} className="photoOfMe" alt="Jesse LoCascio" />
         <div className="line"></div>
         <div className="blurb">
