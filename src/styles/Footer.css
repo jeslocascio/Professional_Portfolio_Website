@@ -1,0 +1,23 @@
+.footer-icon {
+  width: 40px;
+  height: 40px;
+}
+
+
+#linkedin-icon {
+  color: #0077b5;
+}
+
+#github-icon {
+  color: black;
+}
+
+#resume-icon {
+  color: var(--san_juan);
+}
+
+.footer-link:hover {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}
+
