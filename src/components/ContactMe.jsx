@@ -70,7 +70,7 @@ function ContactMe() {
   };
 
   return (
-    <Container className="Contact_Me">
+    <Container className="Contact_Me" id="contact">
     <div className="contact-me-section" id="contact-me">
       <div className="text-center mb-4">
         <h1 className="section-header">Contact Me</h1>

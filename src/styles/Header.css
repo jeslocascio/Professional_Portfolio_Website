@@ -24,15 +24,11 @@
 
 .nav-link {
   text-decoration: none;
-  color: var(--alabaster);
+  color: var(--san_juan);
   transition: color 0.3s ease-in-out;
-  background-color: var(--san_juan);
 }
 
-.nav-link:hover,
-.navbar-brand:hover,
-.separator:hover,
-.navbar-brand:focus {
+.nav-link:hover {
   color: var(--cornflower_blue);
 }
 
@@ -40,10 +36,6 @@
   .navbar {
     flex-direction: column;
     text-align: center;
-  }
-
-  .navbar-brand {
-    margin-bottom: 1rem;
   }
 
   .navbar-toggler-icon {

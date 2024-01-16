@@ -54,7 +54,7 @@ function Skills() {
 
 
     return (
-    <Container className="Skills">
+    <Container className="Skills" id="skills">
     <div>
       <div className="text-center mb-4">
         <h1 className="section-header">Skills</h1>

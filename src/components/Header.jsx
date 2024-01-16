@@ -14,7 +14,7 @@ function Header() {
         <Navbar.Toggle aria-controls="navbar-nav" />
         <Navbar.Collapse id="navbar-nav">
           <Nav className="ms-auto">
-          <Nav.Link href="#" className="nav-link">
+          <Nav.Link href="#home" className="nav-link">
               Home
             </Nav.Link>
             <Nav.Link href="#about" className="nav-link">
@@ -34,32 +34,6 @@ function Header() {
       </Container>
     </Navbar>
   </>
-    // <div>
-    //   <header>
-    //   <a href="#">
-    //     <img src={Logo} className="brandLogo" alt="Jesse LoCascio Logo" />
-    //   </a>
-    //   <div>
-    //     <ul className='headerNav'>
-    //       <li>
-    //         <a href="#">Home</a>
-    //       </li>
-    //         <li>
-    //           <a href="#About_Me">About Me</a>
-    //         </li>
-    //       <li>
-    //         <a href="#Portfolio">Portfolio</a>
-    //       </li>
-    //       <li>
-    //         <a href="#Skills">Skills</a>
-    //       </li>
-    //       <li>
-    //         <a href="#Contact_Me">Contact Me</a>
-    //       </li>
-    //     </ul>
-    //   </div>
-    // </header>
-    // </div>
   )
 }
 

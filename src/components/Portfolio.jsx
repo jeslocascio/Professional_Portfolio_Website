@@ -9,7 +9,7 @@ import "../styles/Portfolio.css";
 
 function Portfolio() {
   return (
-    <Container className="Portfolio">
+    <Container className="Portfolio" id="portfolio">
     {/* <!-- Portfolio Header --> */}
     <div className="text-center mb-4">
         <h1 className="section-header">Portfolio</h1>
