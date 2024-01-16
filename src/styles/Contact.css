@@ -1,0 +1,27 @@
+.contact {
+  background-color: #f4f4f4;
+  padding: 2rem;
+}
+
+.section-header {
+    margin-top: 20px;
+}
+
+.contact-me {
+  background: var(--primary-blue);
+  outline: none;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-row .form-group {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
