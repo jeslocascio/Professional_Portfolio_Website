@@ -3,6 +3,10 @@
   padding: 2rem;
 }
 
+.Contact_Me{
+  margin-top: 20px;
+}
+
 .section-header {
     margin-top: 20px;
 }
@@ -24,4 +28,14 @@
 
 .form-row .form-group:last-child {
   margin-right: 0;
+}
+
+#submit-button {
+ margin-top: 10px;
+ background: var(--cutty_sark);
+ border: none;
+}
+
+#submit-button :hover {
+  background: var(--san_juan);
 }

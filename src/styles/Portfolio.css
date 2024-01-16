@@ -14,7 +14,7 @@
     position: relative; /* Needed for absolute positioning within */
     margin: 10px;
     padding: 20px;
-    border: 1px solid #ddd;
+    border: 5px solid var(--cutty_sark);
     text-align: center;
     overflow: hidden; /* Hide overflowing links initially */
 }
@@ -23,6 +23,7 @@
     width: 100%;
     max-width: 500px;
     height: auto;
+    border: 5px solid var(--cutty_sark);
 }
 
 .project-links {
@@ -40,4 +41,26 @@
 
 .bottom_row {
     margin-bottom: 20px;
+}
+
+.web_link {
+    border: none;
+    background: var(--san_juan);
+    margin: 5px;
+}
+
+.git_link {
+    border: none;
+    background: var(--cornflower_blue);
+    margin: 5px;
+}
+
+.web_link :hover {
+    background: var(--alabaster);
+    color: black;
+}
+
+.git_link :hover {
+    background: var(--alabaster);
+    color: black;
 }

@@ -20,10 +20,10 @@ function Portfolio() {
         {/* <!-- Project 1 --> */}
         <div className="col-md-4">
             <div className="project-box">
-                <img src={Project_1} className="project-img" alt="Project 1" />
+                <img src={Project_1} className="project-img" alt="Branch Out" />
                 <div className="project-links">
-                    <a href="#" className="btn btn-primary btn-sm">Website Link</a>
-                    <a href="#" className="btn btn-secondary btn-sm">GitHub Link</a>
+                    <a href="https://branch-out-web-service.onrender.com/" className="btn btn-primary btn-sm web_link">Website Link</a>
+                    <a href="https://github.com/dmerk2/Branch-Out" className="btn btn-secondary btn-sm git_link">GitHub Link</a>
                 </div>
                 <p>Branch Out</p>
             </div>
@@ -31,10 +31,10 @@ function Portfolio() {
         {/* <!-- Project 2 --> */}
         <div className="col-md-4">
             <div className="project-box">
-                <img src={Project_2} className="project-img" alt="Project 1" />
+                <img src={Project_2} className="project-img" alt={"Now We're Cooking!"} />
                 <div className="project-links">
-                    <a href="#" className="btn btn-primary btn-sm">Website Link</a>
-                    <a href="#" className="btn btn-secondary btn-sm">GitHub Link</a>
+                    <a href="https://nowwerecooking-494c285649f9.herokuapp.com/" className="btn btn-primary btn-sm web_link">Website Link</a>
+                    <a href="https://github.com/RobKaiser97/Recipe-Blog" className="btn btn-secondary btn-sm git_link">GitHub Link</a>
                 </div>
                 <p>{"Now We're Cooking!"}</p>
             </div>
@@ -42,10 +42,10 @@ function Portfolio() {
         {/* <!-- Project 3 --> */}
         <div className="col-md-4">
             <div className="project-box">
-                <img src={Project_3} className="project-img" alt="Project 1" />
+                <img src={Project_3} className="project-img" alt="Book Search Engine" />
                 <div className="project-links">
-                    <a href="#" className="btn btn-primary btn-sm">Website Link</a>
-                    <a href="#" className="btn btn-secondary btn-sm">GitHub Link</a>
+                    <a href="https://dry-cove-68996-10d0ffad8a66.herokuapp.com/" className="btn btn-primary btn-sm web_link">Website Link</a>
+                    <a href="https://github.com/jeslocascio/Book_Search_Engine" className="btn btn-secondary btn-sm git_link">GitHub Link</a>
                 </div>
                 <p>Book Search Engine</p>
             </div>
@@ -55,10 +55,10 @@ function Portfolio() {
         {/* <!-- Project 4 --> */}
         <div className="col-md-4">
             <div className="project-box">
-                <img src={Project_4} className="project-img" alt="Project 1" />
+                <img src={Project_4} className="project-img" alt="PWA Text Editor" />
                 <div className="project-links">
-                    <a href="#" className="btn btn-primary btn-sm">Website Link</a>
-                    <a href="#" className="btn btn-secondary btn-sm">GitHub Link</a>
+                    <a href="https://pwa-test-editor-jeslocascio-d9f1ad1ab017.herokuapp.com/" className="btn btn-primary btn-sm web_link">Website Link</a>
+                    <a href="https://github.com/jeslocascio/PWA_Text_Editor" className="btn btn-secondary btn-sm git_link">GitHub Link</a>
                 </div>
                 <p>PWA Text Editor</p>
             </div>
@@ -66,10 +66,10 @@ function Portfolio() {
         {/* <!-- Project 5 --> */}
         <div className="col-md-4">
             <div className="project-box">
-                <img src={Project_5} className="project-img" alt="Project 1" />
+                <img src={Project_5} className="project-img" alt="Weather Dashboard" />
                 <div className="project-links">
-                    <a href="#" className="btn btn-primary btn-sm">Website Link</a>
-                    <a href="#" className="btn btn-secondary btn-sm">GitHub Link</a>
+                    <a href="https://jeslocascio.github.io/Weather_Dashboard/" className="btn btn-primary btn-sm web_link">Website Link</a>
+                    <a href="https://github.com/jeslocascio/Weather_Dashboard" className="btn btn-secondary btn-sm git_link">GitHub Link</a>
                 </div>
                 <p>Weather Dashboard</p>
             </div>
@@ -77,10 +77,10 @@ function Portfolio() {
         {/* <!-- Project 6 --> */}
         <div className="col-md-4">
             <div className="project-box">
-                <img src={Project_6} className="project-img" alt="Project 1" />
+                <img src={Project_6} className="project-img" alt="Coding Quiz" />
                 <div className="project-links">
-                    <a href="#" className="btn btn-primary btn-sm">Website Link</a>
-                    <a href="#" className="btn btn-secondary btn-sm">GitHub Link</a>
+                    <a href="https://jeslocascio.github.io/JavaScript_Quiz/" className="btn btn-primary btn-sm web_link">Website Link</a>
+                    <a href="https://github.com/jeslocascio/JavaScript_Quiz" className="btn btn-secondary btn-sm git_link">GitHub Link</a>
                 </div>
                 <p>Coding Quiz</p>
             </div>
