@@ -1,0 +1,43 @@
+.Portfolio {
+    margin: 20px auto;
+    border-bottom: 5px dashed var(--cornflower_blue);
+}
+
+.section-header {
+    color: var(--alabaster);
+    background-color: var(--san_juan);
+    width: 300px;
+    margin: 0 auto; /* Add this line */
+}
+
+.project-box {
+    position: relative; /* Needed for absolute positioning within */
+    margin: 10px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+    overflow: hidden; /* Hide overflowing links initially */
+}
+
+.project-img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.project-links {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    opacity: 0; /* Initially invisible */
+    transition: opacity 0.3s ease-in-out; /* Smooth fade effect */
+}
+
+.project-box:hover .project-links {
+    opacity: 1; /* Fade in on hover */
+}
+
+.bottom_row {
+    margin-bottom: 20px;
+}
