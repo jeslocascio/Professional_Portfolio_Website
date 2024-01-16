@@ -1,147 +1,102 @@
-import { useState } from "react";
-import {Container} from "react-bootstrap";
+import { Container, Row, Col, Form, Button } from "react-bootstrap";
 import "../styles/Contact.css";
 
-function ContactMe() {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    subject: "",
-    message: "",
-  });
-
-  const [formErrors, setFormErrors] = useState({
-    name: false,
-    email: false,
-    subject: false,
-    message: false,
-  });
-
-  const validateEmail = (email) => {
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
-  };
-
+function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Validate required fields
-    const errors = {
-      name: !formData.name.trim(),
-      email: !validateEmail(formData.email),
-      subject: !formData.subject.trim(),
-      message: !formData.message.trim(),
-    };
+    const name = e.target.elements.name.value;
+    const email = e.target.elements.email.value;
+    const phone = e.target.elements.phone.value;
+    const subject = e.target.elements.subject.value;
+    const message = e.target.elements.message.value;
 
-    setFormErrors(errors);
+    const recipientEmail = "locascioje@gmail.com";
 
-    // Check if there are any errors
-    if (Object.values(errors).some(Boolean)) {
-      // Handle validation errors
-      return;
-    }
+    const mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(
+      `Message from ${name} - ${subject}`
+    )}&body=${encodeURIComponent(
+      `Name: ${name}%0D%0AEmail: ${email}%0D%0APhone: ${phone}%0D%0ASubject: ${subject}%0D%0AMessage: ${message}`
+    )}`;
 
-    // Form is valid, send the email (You might need a backend for this)
-
-    // Display a success message or redirect to a thank you page
-    alert("Message sent successfully!");
-
-    // Clear the form
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      subject: "",
-      message: "",
-    });
-  };
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [name]: value,
-    }));
-    setFormErrors((prevErrors) => ({
-      ...prevErrors,
-      [name]: false, // Clear error when user types
-    }));
+    window.location.href = mailtoLink;
   };
 
   return (
-    <Container className="Contact_Me" id="contact">
-    <div className="contact-me-section" id="contact-me">
-      <div className="text-center mb-4">
-        <h1 className="section-header">Contact Me</h1>
-      </div>
-      <form onSubmit={handleSubmit}>
-        <div className="form-row">
-          <div className="form-group">
-            <label>Your Name:</label>
-            <input
-              type="text"
-              name="name"
-              value={formData.name}
-              onChange={handleChange}
-              className={`form-control ${formErrors.name ? "error" : ""}`}
-              required
-            />
-          </div>
-          <div className="form-group">
-            <label>Your Email:</label>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleChange}
-              className={`form-control ${formErrors.email ? "error" : ""}`}
-              required
-            />
-          </div>
-        </div>
-        <div className="form-row">
-          <div className="form-group">
-            <label>Your Phone Number:</label>
-            <input
-              type="tel"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              className="form-control"
-            />
-          </div>
-          <div className="form-group">
-            <label>Subject:</label>
-            <input
-              type="text"
-              name="subject"
-              value={formData.subject}
-              onChange={handleChange}
-              className={`form-control ${formErrors.subject ? "error" : ""}`}
-              required
-            />
-          </div>
-        </div>
-        <div className="form-group">
-          <label>Your Message:</label>
-          <textarea
-            name="message"
-            value={formData.message}
-            onChange={handleChange}
-            className={`form-control ${formErrors.message ? "error" : ""}`}
-            required
-          ></textarea>
-        </div>
-        <div className="form-group">
-          <button type="submit" className="btn btn-primary" id="submit-button">
-            Submit
-          </button>
-        </div>
-      </form>
+    <div className="contact" id="contact">
+      <Container>
+        <Row className="justify-content-center">
+          <Col md={8}>
+          <div className="text-center mb-4">
+             <h1 className="section-header">Contact Me</h1>
+             <span className="success-message text-muted font-italic"></span>
+            </div>
+            <Form onSubmit={handleSubmit}>
+              <Row>
+                <Col md={6}>
+                  <Form.Group>
+                    <Form.Label className="error-message py-1"></Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Your Name"
+                      name="name"
+                      required
+                    />
+                    <div className="line"></div>
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Label className="error-message py-1"></Form.Label>
+                    <Form.Control
+                      type="tel"
+                      placeholder="Your Phone Number"
+                      name="phone"
+                    />
+                    <div className="line"></div>
+                  </Form.Group>
+                </Col>
+                <Col md={6}>
+                  <Form.Group>
+                    <Form.Label className="error-message py-1"></Form.Label>
+                    <Form.Control
+                      type="email"
+                      placeholder="Your Email"
+                      name="email"
+                      required
+                    />
+                    <div className="line"></div>
+                  </Form.Group>
+                  <Form.Group>
+                    <Form.Label className="error-message py-1"></Form.Label>
+                    <Form.Control
+                      type="text"
+                      placeholder="Subject"
+                      name="subject"
+                      required
+                    />
+                    <div className="line"></div>
+                  </Form.Group>
+                </Col>
+              </Row>
+              <Form.Group>
+                <Form.Label className="error-message py-1"></Form.Label>
+                <Form.Control
+                  as="textarea"
+                  rows={4}
+                  placeholder="Your Message"
+                  name="message"
+                  required
+                />
+                <div className="line"></div>
+              </Form.Group>
+              <Button type="submit" className="contact-me mt-3" id="submit-button">
+                Contact Me
+              </Button>
+            </Form>
+          </Col>
+        </Row>
+      </Container>
     </div>
-    </Container>
   );
 }
 
-export default ContactMe;
+export default Contact;
