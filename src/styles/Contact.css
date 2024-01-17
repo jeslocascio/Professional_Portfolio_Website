@@ -1,5 +1,5 @@
 .contact {
-  background-color: #f4f4f4;
+  background-color: var(--alabaster);
   padding: 2rem;
 }
 
