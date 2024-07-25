@@ -1,4 +1,4 @@
-import {Container} from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import {
   FaReact,
   FaNodeJs,
@@ -22,6 +22,8 @@ import {
   SiHeroku,
   SiAdobe,
   SiPhotopea,
+  SiChakraui,
+  SiTypescript,
 } from "react-icons/si";
 import "../styles/Skills.css";
 
@@ -33,8 +35,10 @@ function Skills() {
     { icon: <FaBootstrap />, text: "Bootstrap" },
     { icon: <FaHtml5 />, text: "HTML5" },
     { icon: <SiJavascript />, text: "Javascript" },
+    { icon: <SiTypescript />, text: "Typescript" },
     { icon: <FaCss3 />, text: "CSS3" },
     { icon: <SiTailwindcss />, text: "Tailwind" },
+    { icon: <SiChakraui />, text: "Chakra" },
     { icon: <FaWordpress />, text: "Wordpress" },
     { icon: <FaReact />, text: "React" },
     { icon: <FaGit />, text: "Git" },
@@ -52,38 +56,37 @@ function Skills() {
     { icon: <SiExpress />, text: "Express" },
   ];
 
-
-    return (
+  return (
     <Container className="Skills" id="skills">
-    <div>
-      <div className="text-center mb-4">
-        <h1 className="section-header">Skills</h1>
-      </div>
+      <div>
+        <div className="text-center mb-4">
+          <h1 className="section-header">Skills</h1>
+        </div>
 
-      <div className="text-center mb-4">
-        <h3 className="section-subheader">Front-End Skills</h3>
-      </div>
-      <div className="front-end-skills">
-        {frontEndIcons.map((item, index) => (
-          <div key={index}>
-            {item.icon}
-            <p>{item.text}</p>
-          </div>
-        ))}
-      </div>
+        <div className="text-center mb-4">
+          <h3 className="section-subheader">Front-End Skills</h3>
+        </div>
+        <div className="front-end-skills">
+          {frontEndIcons.map((item, index) => (
+            <div key={index}>
+              {item.icon}
+              <p>{item.text}</p>
+            </div>
+          ))}
+        </div>
 
-      <div className="text-center mb-4">
-        <h3 className="section-subheader">Back-End Skills</h3>
+        <div className="text-center mb-4">
+          <h3 className="section-subheader">Back-End Skills</h3>
+        </div>
+        <div className="back-end-skills">
+          {backEndIcons.map((item, index) => (
+            <div key={index}>
+              {item.icon}
+              <p>{item.text}</p>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="back-end-skills">
-        {backEndIcons.map((item, index) => (
-          <div key={index}>
-            {item.icon}
-            <p>{item.text}</p>
-          </div>
-        ))}
-      </div>
-    </div>
     </Container>
   );
 }
